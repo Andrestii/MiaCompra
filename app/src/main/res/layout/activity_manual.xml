@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manual"
+    android:background="@drawable/background_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Manual de Usuario"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40sp"
+            android:text="• El botón con el símbolo '+' abre el menú para añadir un artículo a la lista de la compra, con la posibilidad de añadir también una foto."
+            android:justificationMode="inter_word"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40sp"
+            android:text="• Mientras que haces la compra, puedes seleccionar cada artículo que vas a comprar."
+            android:justificationMode="inter_word"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:text="• Una vez que haya terminado de comprar, puede utilizar el botón del carrito de compras para eliminar todos los artículos seleccionados de la lista."
+            android:justificationMode="inter_word"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/main"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        android:layout_margin="25sp"
+        android:backgroundTint="#FAA332"
+        android:src="@drawable/baseline_arrow_back_24"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
